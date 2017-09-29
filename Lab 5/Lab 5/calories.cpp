@@ -26,6 +26,9 @@ int main ()
   fatCalPercent = ((float)gramsOfFat * 9) / (float)calories * 100;
 
   cout << "Fat calorie percentage:" << fatCalPercent << "%" << endl;
+
+  cout << "This item is " << ( (fatCalPercent < .3) ? "NOT " : "") << "Heart Healthy!!" << endl;
+  cin.get(); cin.get(); //Hold the window open
   return 0;
 }
 
