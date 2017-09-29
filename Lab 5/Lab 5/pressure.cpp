@@ -7,13 +7,13 @@ using namespace std;
 int main()
 {
 	int  pressure;
+	cout << "Enter an integer pressure reading. "
+		<< " Press Return." << endl;
+	cin >> pressure;
+	if (pressure > 100) cout << "Warning!! Pressure reading above danger limit." << endl;
+	else if (pressure <= 5) cout << "The pressure is unusally low" << endl;
 	else cout << "Everything seems normal." << endl;
 
-  cout << "Enter an integer pressure reading. "
-       << " Press Return."  << endl;
-  cin >> pressure;
-  if (pressure > 100) cout << "Warning!! Pressure reading above danger limit." << endl;
-  return 0;
 
 	cin.get(); cin.get();	//Hold the window open.
 	return 0;
