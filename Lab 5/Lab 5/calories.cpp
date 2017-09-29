@@ -23,7 +23,9 @@ int main ()
        << endl;
   cin >> calories;
   
-  /* TO BE FILLED IN */
+  fatCalPercent = ((float)gramsOfFat * 9) / (float)calories * 100;
+
+  cout << "Fat calorie percentage:" << fatCalPercent << "%" << endl;
   return 0;
 }
 
