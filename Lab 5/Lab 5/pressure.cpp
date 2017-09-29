@@ -1,4 +1,4 @@
-// Program Pressureprints appropriate messages based on
+// Program Pressure prints appropriate messages based on
 // a pressure reading input from the keyboard.
 
 #include <iostream>
@@ -11,6 +11,6 @@ main ()
   cout << "Enter an integer pressure reading. "
        << " Press Return."  << endl;
   cin >> pressure;
-  /* FILL IN Code appropriate to exercise */ 
+  if (pressure > 100) cout << "Warning!! Pressure reading above danger limit." << endl;
   return 0;
 }
